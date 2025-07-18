@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projet - Régulation MCC avec DSP</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fafaf5;
+      color: #333;
+      line-height: 1.8;
+    }
+    nav {
+      background: #8b7355;
+      padding: 1rem;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin: 0;
+      padding: 0;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 8px 15px;
+      border-radius: 30px;
+      transition: background 0.3s ease;
+    }
+    nav ul li a:hover {
+      background-color: #6b5a42;
+    }
+    .container {
+      padding: 4rem 2rem;
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    }
+    h1, h2, h3 {
+      color: #8b7355;
+    }
+    ul {
+      padding-left: 1.5rem;
+    }
+    .section {
+      margin-bottom: 3rem;
+    }
+    .keywords {
+      background: #f5f5dc;
+      padding: 1rem;
+      border-radius: 8px;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="home.html">⬅ Retour à l'accueil</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h1>Projet : Régulation de la vitesse d'un MCC via DSP</h1>
+
+    <div class="section">
+      <h2>Contexte du Projet</h2>
+      <p>Dans le cadre de ma formation à l’EHEI Oujda, j’ai conçu un système de régulation de vitesse pour un moteur à courant continu (MCC) piloté par un hacheur quatre quadrants, contrôlé par une carte DSP Texas Instruments. Le projet combine modélisation, simulation MATLAB/Simulink, et implémentation matérielle.</p>
+    </div>
+
+    <div class="section">
+      <h2>Objectifs Principaux</h2>
+      <h3>Modélisation et Simulation :</h3>
+      <ul>
+        <li>Modèle dynamique MCC + hacheur 4Q sous Simulink.</li>
+        <li>Validation des fonctions de transfert et comparaison des modèles.</li>
+        <li>Simulation des réponses en boucle ouverte et fermée.</li>
+      </ul>
+      <h3>Implémentation Matérielle :</h3>
+      <ul>
+        <li>Configuration DSP : GPIO, PWM, ADC.</li>
+        <li>Interface carte BOOSTXL-DRV8305EVM.</li>
+        <li>Protection et lecture du tachymètre via circuit conditionnement.</li>
+      </ul>
+      <h3>Régulation et Validation :</h3>
+      <ul>
+        <li>Conception d’un correcteur PI.</li>
+        <li>Tests de régulation fermée avec variations de charge.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Réalisations Clés</h2>
+      <ul>
+        <li>Simulation Simulink des 4 quadrants.</li>
+        <li>Programmation des ePWM DSP à 45 kHz.</li>
+        <li>Lecture tachymètre via ADC avec protection Zener.</li>
+        <li>Régulation ±2 tr/min avec correcteur PI (Kp = 0.045, Ki = 0.142).</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Compétences Acquises</h2>
+      <h3>Techniques :</h3>
+      <ul>
+        <li>MATLAB/Simulink, modélisation de systèmes.</li>
+        <li>Programmation DSP avec Code Composer Studio.</li>
+        <li>Électronique de puissance et circuits de protection.</li>
+      </ul>
+      <h3>Méthodologiques :</h3>
+      <ul>
+        <li>Approche projet : de la théorie à l’expérimentation.</li>
+        <li>Analyse critique et ajustement du correcteur.</li>
+        <li>Travail en équipe et documentation technique.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Impact et Perspectives</h2>
+      <p>Ce projet illustre les possibilités de la commande numérique dans l’automatisation. Il ouvre la voie à des applications en robotique, transport électrique ou systèmes embarqués avancés.</p>
+      <ul>
+        <li>Amélioration : ajout d’un PID pour une meilleure dynamique.</li>
+        <li>Ajout d’interface HMI pour visualisation en temps réel.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Visuals à Intégrer</h2>
+      <ul>
+        <li>Schémas Simulink (modèle MCC, hacheur 4Q)</li>
+        <li>Photos du montage physique (banc de test, câblage)</li>
+        <li>Courbes de réponse dynamique (vitesse, courant)</li>
+        <li>Extraits de code (ePWM, correcteur PI)</li>
+      </ul>
+    </div>
+
+    <div class="section keywords">
+      Mots-clés : DSP, MCC, Hacheur 4Q, Simulink, Régulation PI, Temps réel, Electronique de puissance.
+    </div>
+
+    <p><strong>Conclusion :</strong> Ce projet a renforcé ma capacité à modéliser, coder et tester des systèmes complexes en conditions réelles. Une expérience concrète en contrôle-commande industrielle.</p>
+  </div>
+</body>
+</html>

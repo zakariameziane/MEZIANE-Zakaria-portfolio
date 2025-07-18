@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projet IoT | Zakaria Meziane</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --beige: #f5f5dc;
+      --light-beige: #fafaf5;
+      --dark-beige: #e0e0d1;
+      --accent-color: #8b7355;
+      --white: #ffffff;
+      --text-color: #333;
+      --transition: all 0.4s ease;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: var(--light-beige);
+      color: var(--text-color);
+      line-height: 1.7;
+      padding: 2rem;
+    }
+
+    h1, h2 {
+      font-family: 'Playfair Display', serif;
+      color: var(--accent-color);
+    }
+
+    a.button {
+      display: inline-block;
+      background-color: var(--accent-color);
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      margin: 10px 10px 20px 0;
+      transition: var(--transition);
+    }
+
+    a.button:hover {
+      background-color: #6b5a42;
+    }
+
+    .back-button {
+      text-align: left;
+      margin-bottom: 20px;
+    }
+
+    .hero {
+      max-width: 1000px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .hero img {
+      width: 100%;
+      max-width: 600px;
+      margin: 20px auto;
+      border-radius: 10px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+
+    .content {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+
+    .text {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .image-side {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .image-side img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+
+    .section {
+      max-width: 1000px;
+      margin: 3rem auto;
+      padding: 2rem;
+      background: var(--white);
+      border-radius: 12px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    }
+
+    .section h2 {
+      margin-bottom: 1rem;
+      position: relative;
+    }
+
+    .section h2::after {
+      content: '';
+      position: absolute;
+      bottom: -8px;
+      left: 0;
+      width: 60px;
+      height: 3px;
+      background: var(--accent-color);
+    }
+
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .image-grid img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      transition: var(--transition);
+    }
+
+    .image-grid img:hover {
+      transform: scale(1.03);
+    }
+
+    pre {
+      background: #2d2d2d;
+      color: #eee;
+      padding: 1rem;
+      border-radius: 8px;
+      overflow-x: auto;
+      margin-top: 1rem;
+    }
+
+    iframe {
+      width: 100%;
+      max-width: 800px;
+      height: 400px;
+      border: none;
+      border-radius: 10px;
+      margin-top: 1rem;
+    }
+
+    @media (max-width: 768px) {
+      .content {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Bouton de retour -->
+  <div class="back-button">
+    <a href="home.html" class="button"><i class="fas fa-arrow-left"></i> Retour à l'accueil</a>
+  </div>
+
+  <!-- En-tête -->
+  <section class="hero">
+    <h1>Projet IoT : Surveillance de Température et Humidité</h1>
+    <a href="https://zakariameziane.pythonanywhere.com" class="button" target="_blank"><i class="fas fa-globe"></i> Application Web</a>
+    <a href="https://github.com/TON_GITHUB" class="button" target="_blank"><i class="fab fa-github"></i> Code GitHub</a>
+  </section>
+
+  <!-- Présentation -->
+  <div class="content">
+    <div class="text">
+      <p>
+        J’ai conçu un système de surveillance de température et d’humidité à distance, basé sur une carte ESP8266 et un capteur DHT11. 
+        L’application web a été développée avec Django sur PyCharm, puis déployée sur PythonAnywhere. Le schéma électronique a été réalisé sur EasyEDA, 
+        et le circuit imprimé (PCB) usiné à l’aide de FlatCAM. Le boîtier protecteur a été modélisé et imprimé en 3D avec Fusion 360.
+      </p>
+    </div>
+    <div class="image-side">
+      <img src="img/graph.png" alt="Montage IoT">
+    </div>
+  </div>
+
+  <!-- Étapes de réalisation -->
+  <div class="section">
+    <h2>1. Matériel </h2>
+    <div class="image-grid">
+      <img src="img/esp.png" alt="ESP8266">
+      <img src="img/dht11.png" alt="DHT11">
+      <img src="img/pcb11.png" alt="EasyEDA">
+      <img src="img/btfusn.png" alt="Fusion 360">
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>2. PCB & Boîtier</h2>
+    <p>Schéma réalisé sur EasyEDA, puis fichier CNC généré avec FlatCAM. Le boîtier 3D a été conçu avec Fusion 360 pour une intégration parfaite du circuit.</p>
+    <div class="image-grid">
+      <img src="img/circuit.jpeg" alt="Circuit PCB">
+      <img src="img/boitierbl.jpeg" alt="Boîtier imprimé 3D">
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>3. Code Arduino</h2>
+      <img src="img/codear.png" alt=""">
+  </div>
+
+  <div class="section">
+    <h2>4. Application Web</h2>
+    <p>Développée avec Django, l’application permet de visualiser les données en temps réel, configurer les seuils, et envoyer des alertes via Gmail et WhatsApp.</p>
+    <iframe src="video/iot.mp4" allowfullscreen></iframe>
+  </div>
+</body>
+</html>

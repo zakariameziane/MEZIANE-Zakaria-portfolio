@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projet - Centrale PV Jerada</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fafaf5;
+      color: #333;
+      line-height: 1.8;
+    }
+    nav {
+      background: #8b7355;
+      padding: 1rem;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin: 0;
+      padding: 0;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 8px 15px;
+      border-radius: 30px;
+      transition: background 0.3s ease;
+    }
+    nav ul li a:hover {
+      background-color: #6b5a42;
+    }
+    .container {
+      padding: 4rem 2rem;
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    }
+    h1, h2, h3 {
+      color: #8b7355;
+    }
+    ul {
+      padding-left: 1.5rem;
+    }
+    .section {
+      margin-bottom: 3rem;
+    }
+    .keywords {
+      background: #f5f5dc;
+      padding: 1rem;
+      border-radius: 8px;
+      font-style: italic;
+    }
+    img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin: 1rem 0;
+    }
+    code {
+      background-color: #f4f4f4;
+      padding: 2px 4px;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="home.html">⬅ Retour à l'accueil</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h1>Projet : Centrale Photovoltaïque 129.6 kWc pour Irrigation – Jerada</h1>
+
+    <div class="section">
+      <h2>Contexte du Projet</h2>
+      <p>Dans le cadre d'un appel d'offres public (N°06/2023/DPAJ/SMOP), j'ai conçu et dimensionné une centrale photovoltaïque de 129.6 kWc destinée à une station de pompage d’irrigation dans le périmètre agricole de Ras El Ain (Jerada). Le projet inclut des simulations PVsyst, le dimensionnement électrique, et la conception des schémas AutoCAD.</p>
+    </div>
+
+    <div class="section">
+      <h2>Objectifs Principaux</h2>
+      <h3>Dimensionnement Technique :</h3>
+      <ul>
+        <li>Puissance crête : 129.6 kWc selon besoins hydrauliques et ensoleillement.</li>
+        <li>Architecture optimisée : chaînes PV, onduleurs, coffrets, câblage.</li>
+      </ul>
+      <h3>Sécurité & Conformité :</h3>
+      <ul>
+        <li>Protections conformes à la norme <code>UTE C15-712-2</code>.</li>
+        <li>Chutes de tension contrôlées (&lt;1%), sections optimisées (DC : 4 mm² / AC : 16 mm²).</li>
+      </ul>
+      <h3>Étude Économique :</h3>
+      <ul>
+        <li>Production estimée : 342 à 825 kWh/jour selon les mois.</li>
+        <li>Analyse du retour sur investissement et rentabilité énergétique.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Réalisations Clés</h2>
+      <ul>
+        <li>228 panneaux polycristallins de 570 Wc chacun.</li>
+        <li>3 onduleurs triphasés Huawei SUN2000-40KTL-M3 (40 kW).</li>
+        <li>Chaînes : 19 panneaux en série × 12 chaînes parallèles.</li>
+        <li>Schéma unifilaire AutoCAD avec coffrets DC/AC, protections, et smartmeter.</li>
+        <li>Fusibles 20A et 32A, parafoudres Type 2 (2.2 kV).</li>
+        <li><code>S_DC = 4 mm² (30 m), S_AC = 16 mm² (15 m)</code></li>
+      </ul>
+      <img src="https://media/image5.jpg" alt="Schéma unifilaire de la centrale PV">
+    </div>
+
+    <div class="section">
+      <h2>Simulation PVsyst</h2>
+      <p>Production annuelle simulée : environ 6.9 MWh. Adaptée aux variations saisonnières avec un rayonnement moyen de 3.3 à 7.96 kWh/m²/j.</p>
+    </div>
+
+    <div class="section">
+      <h2>Compétences Acquises</h2>
+      <h3>Ingénierie Électrique :</h3>
+      <ul>
+        <li>Dimensionnement précis de chaînes PV et choix des protections.</li>
+        <li>Normes UTE, calculs de chute de tension, MPPT.</li>
+      </ul>
+      <h3>Outils :</h3>
+      <ul>
+        <li>PVsyst pour les simulations énergétiques.</li>
+        <li>AutoCAD pour les schémas unifilaires.</li>
+        <li>Excel pour les calculs techniques et bilans énergétiques.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Impact et Perspectives</h2>
+      <p>Ce projet a permis de réduire les coûts énergétiques liés à l’irrigation de plus de 80% comparé à une alimentation diesel. Il ouvre la voie à :</p>
+      <ul>
+        <li>Ajout de batteries pour stockage nocturne.</li>
+        <li>Extension à d'autres périmètres agricoles dans la région.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Visuals à Intégrer</h2>
+      <ul>
+        <li>Schéma unifilaire (PDF ou image).</li>
+        <li>Tableau de production mensuelle.</li>
+        <li>Photos de maquette ou simulations 3D du champ PV.</li>
+      </ul>
+    </div>
+
+    <div class="section keywords">
+      Mots-clés : Photovoltaïque, Dimensionnement, PVsyst, AutoCAD, UTE C15-712-2, Irrigation, Jerada.
+    </div>
+
+    <p><strong>Conclusion :</strong> Ce projet m’a permis de consolider mes compétences en conception de centrales solaires et en ingénierie électrique, avec un fort impact environnemental et économique.</p>
+  </div>
+</body>
+</html>
