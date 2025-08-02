@@ -5,256 +5,366 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta name="description" content="Portfolio professionnel de Zakaria Meziane, Ingénieur en Génie des Systèmes Industriels">
   <title>Portfolio - Zakaria Meziane | Ingénieur en Génie des Systèmes Industriels</title>
+  <link rel="icon" type="image/x-icon" href="img/2595789-200.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-  <div class="bg-pattern"></div>
-
-  <!-- Navbar -->
-  <nav id="navbar">
-    <ul>
-      <li><a href="#home" class="active">Accueil</a></li>
-      <li><a href="#about">À propos</a></li>
-      <li><a href="#skills">Compétences</a></li>
-      <li><a href="#projects">Projets</a></li>
-      <li><a href="#experience">Expérience</a></li>
-    </ul>
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo">ZM</a>
+      <ul class="nav-menu">
+        <li><a href="#home" class="nav-link active">Accueil</a></li>
+        <li><a href="#about" class="nav-link">À propos</a></li>
+        <li><a href="#skills" class="nav-link">Compétences</a></li>
+        <li><a href="#projects" class="nav-link">Projets</a></li>
+        <li><a href="#experience" class="nav-link">Expérience</a></li>
+      </ul>
+      <button class="mobile-menu-btn">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
   </nav>
 
-  <!-- Back to Top Button -->
-  <div class="back-to-top" id="backToTop">
-    <i class="fas fa-arrow-up"></i>
-  </div>
-
-  <!-- Section principale -->
+  <!-- Hero Section -->
   <section class="hero" id="home">
-    <div class="hero-text">
-      <h1>Zakaria Meziane</h1>
-      <h2>Ingénieur en Génie des Systèmes Industriels</h2>
-      <p>
-        Passionné par l’innovation industrielle, je combine une expertise technique solide à une vision stratégique pour optimiser les systèmes de production. Je suis spécialisé en automatisation, en efficacité énergétique et en gestion de projets industriels.
-      </p>
-
-      <div class="contact-buttons">
-        <a href="www.linkedin.com/in/zakaria-meziane-5a8524170" target="_blank" class="linkedin">
-          <i class="fab fa-linkedin-in"></i> Zakaria MEZIANE
-        </a>
-        <a href="mailto:zakariameziane66@gmail.com" class="gmail">
-          <i class="fas fa-envelope"></i> zakariameziane66@gmail.com
-        </a>
-        <a href="tel:+212687656704" class="phone">
-          <i class="fas fa-phone"></i> +212 6 87 65 67 04
-        </a>
-        <a href="https://github.com/zakariameziane" class="github">
-          <i class="fab fa-github"></i> zakariameziane
-        </a>
-      </div>
-    </div>
-    <div class="hero-img">
-      <img src="img/profil (2).jpeg" alt="Zakaria Meziane - Ingénieur en Génie des Systèmes Industriels" />
-    </div>
-  </section>
-
-  <!-- Section À propos -->
-  <section class="about" id="about">
-    <h2 class="section-title">À propos de moi</h2>
-    <p>
-      Ingénieur en Génie des Systèmes Industriels, je possède une formation approfondie en automatisation, gestion de l’énergie et optimisation des processus industriels. Je combine rigueur technique et créativité pour concevoir des solutions innovantes, performantes et adaptées aux enjeux actuels de l’industrie. Passionné par les technologies émergentes et l’amélioration continue, je m’engage à apporter valeur et efficacité aux projets auxquels je contribue.
-    </p>
-
-    <div class="schools">
-      <a href="https://ehei.ma" target="_blank" class="school-button">
-        <h3>École des Hautes Études d'Ingénieur (EHEI)</h3>
-        <p>Cycle d'ingénieur en Génie des Systèmes Industriels<br>2023 - Présent | Oujda, Maroc</p>
-      </a>
-
-      <a href="https://ifmeree.ma" target="_blank" class="school-button">
-        <h3>IFMEREE Oujda</h3>
-        <p>Diplôme Technicien spécialisé en système de l’énergie solaire<br>2020 - 2022 | Oujda, Maroc</p>
-      </a>
-    </div>
-  </section>
-  
-  <!-- Section Compétences -->
-  <section class="skills" id="skills">
-    <h2 class="section-title">Compétences</h2>
-
-    <div class="skills-container">
-      <!-- Soft Skills -->
-      <div class="soft-skills">
-        <div class="skill">
-          <span>Communication</span>
-          <div class="bar"><div style="width: 90%;" data-percent="90%"></div></div>
-        </div>
-        <div class="skill">
-          <span>Travail en équipe</span>
-          <div class="bar"><div style="width: 95%;" data-percent="95%"></div></div>
-        </div>
-        <div class="skill">
-          <span>Gestion de projet</span>
-          <div class="bar"><div style="width: 85%;" data-percent="85%"></div></div>
-        </div>
-        <div class="skill">
-          <span>Résolution de problèmes</span>
-          <div class="bar"><div style="width: 92%;" data-percent="92%"></div></div>
-        </div>
-      </div>
-
-      <!-- Hard Skills -->
-      <div class="hard-skills">
-        <h3>Expertise Technique</h3>
+    <div class="hero-container">
+      <div class="hero-content">
+        <h1>Zakaria Meziane</h1>
+        <div class="subtitle">Ingénieur en Génie des Systèmes Industriels</div>
+        <p class="description">
+          Passionné par l'innovation industrielle, je combine une expertise technique solide à une vision stratégique pour optimiser les systèmes de production. Spécialisé en automatisation, efficacité énergétique et gestion de projets industriels.
+        </p>
         
-        <div class="skills-categories">
-          <div class="skills-category">
-            <h4>Ingénierie Industrielle</h4>
-            <div class="icons">
-              <div class="skill-icon">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png" alt="MATLAB/Simulink">
-                <span>MATLAB/Simulink</span>
-              </div>
-              <div class="skill-icon">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/DS-CATIA-Logo.png/640px-DS-CATIA-Logo.png" alt="Catia">
-                <span>Catia</span>
-              </div> </br>
-              <div class="skill-icon">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw6Q4n-91yxCmYhW_AxUKuI_XhETVI_6fCBA&s" alt="AutoCAD">
-                <span>AutoCAD</span>
-              </div>
-              <div class="skill-icon">
-                <img src="https://usoftly.ir/wp-content/uploads/2022/02/Siemens-Simatic-S7-PLCSIM-V17-1.png" alt="DIALux evo">
-                <span>PLCSIM</span>
-              </div>
-            </div>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">
+            <i class="fas fa-rocket"></i>
+            Voir mes projets
+          </a>
+          <a href="#about" class="btn btn-outline">
+            <i class="fas fa-user"></i>
+            En savoir plus
+          </a>
+         <a href="MEZIANE Zakaria .pdf" class="btn btn-outline" download>
+            <i class="fas fa-download"></i>
+            Télécharger CV
+          </a>
+        </div>
+
+        <div class="contact-info">
+          <a href="mailto:zakariameziane66@gmail.com" class="contact-item">
+            <i class="fas fa-envelope"></i>
+            zakariameziane66@gmail.com
+          </a>
+          <a href="tel:+212687656704" class="contact-item">
+            <i class="fas fa-phone"></i>
+            +212 6 87 65 67 04
+          </a>
+          <a href="https://www.linkedin.com/in/zakaria-meziane-5a8524170" class="contact-item" target="_blank">
+            <i class="fab fa-linkedin-in"></i>
+            LinkedIn
+          </a>
+          <a href="https://github.com/zakariameziane" class="contact-item" target="_blank">
+            <i class="fab fa-github"></i>
+            GitHub
+          </a>
+        </div>
+      </div>
+      
+      <div class="hero-image">
+        <img src="img/profil (2).jpeg" alt="Zakaria Meziane" />
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section about" id="about">
+    <div class="container">
+      <h2 class="section-title">À propos de moi</h2>
+      <p class="section-subtitle">
+        Une passion pour l'innovation et l'excellence technique
+      </p>
+      
+      <div class="about-content">
+        <div class="about-text">
+          <p>
+            Ingénieur en Génie des Systèmes Industriels, je possède une formation approfondie en automatisation, gestion de l'énergie et optimisation des processus industriels. Je combine rigueur technique et créativité pour concevoir des solutions innovantes, performantes et adaptées aux enjeux actuels de l'industrie.
+          </p>
+          <p>
+            Passionné par les technologies émergentes et l'amélioration continue, je m'engage à apporter valeur et efficacité aux projets auxquels je contribue. Mon approche multidisciplinaire me permet d'aborder les défis industriels sous différents angles.
+          </p>
+        </div>
+        
+        <div class="education-cards">
+          <div class="education-card">
+            <h3>Cycle d'ingénieur en Génie des Systèmes Industriels</h3>
+            <div class="school">École des Hautes Études d'Ingénieur (EHEI)</div>
+            <div class="period">2023 - Présent | Oujda, Maroc</div>
           </div>
           
-          <div class="skills-category">
-            <h4>Développement</h4>
-            <div class="icons">
-              <div class="skill-icon">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C">
-                <span>C</span>
-              </div>
-              <div class="skill-icon">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++">
-                <span>C++</span>
-              </div>
-              <div class="skill-icon">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
-                <span>Python</span>
-              </div>
-              <div class="skill-icon">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" alt="Django">
-                <span>Django</span>
-              </div>
-              <div class="skill-icon">
-                <img src="https://upload.wikimedia.org/wikipedia/en/f/f7/CCS_icon.png" alt="Django">
-                <span>code composer</span>
-              </div>
-               <div class="skill-icon">
-                <img src="https://cdn.worldvectorlogo.com/logos/arduino-1.svg" alt="Django">
-                <span>arduino</span>
-              </div>
+          <div class="education-card">
+            <h3>Technicien spécialisé en système de l'énergie solaire</h3>
+            <div class="school">IFMEREE Oujda</div>
+            <div class="period">2020 - 2022 | Oujda, Maroc</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="section skills" id="skills">
+    <div class="container">
+      <h2 class="section-title">Compétences</h2>
+      <p class="section-subtitle">
+        Un ensemble d'expertises techniques et humaines
+      </p>
+      
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3><i class="fas fa-cogs"></i> Ingénierie Industrielle</h3>
+          <div class="skill-icons">
+            <div class="skill-icon">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png" alt="MATLAB">
+              <span>MATLAB/Simulink</span>
+            </div>
+            <div class="skill-icon">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/DS-CATIA-Logo.png/640px-DS-CATIA-Logo.png" alt="Catia">
+              <span>Catia</span>
+            </div>
+            <div class="skill-icon">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw6Q4n-91yxCmYhW_AxUKuI_XhETVI_6fCBA&s" alt="AutoCAD">
+              <span>AutoCAD</span>
+            </div>
+            <div class="skill-icon">
+              <img src="https://usoftly.ir/wp-content/uploads/2022/02/Siemens-Simatic-S7-PLCSIM-V17-1.png" alt="PLCSIM">
+              <span>PLCSIM</span>
             </div>
           </div>
+        </div>
+        
+        <div class="skill-category">
+          <h3><i class="fas fa-code"></i> Développement</h3>
+          <div class="skill-icons">
+            <div class="skill-icon">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C">
+              <span>C</span>
+            </div>
+            <div class="skill-icon">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++">
+              <span>C++</span>
+            </div>
+            <div class="skill-icon">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+              <span>Python</span>
+            </div>
+            <div class="skill-icon">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" alt="Django">
+              <span>Django</span>
+            </div>
+            <div class="skill-icon">
+              <img src="https://upload.wikimedia.org/wikipedia/en/f/f7/CCS_icon.png" alt="Code Composer">
+              <span>Code Composer</span>
+            </div>
+            <div class="skill-icon">
+              <img src="https://cdn.worldvectorlogo.com/logos/arduino-1.svg" alt="Arduino">
+              <span>Arduino</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="skill-category">
+          <h3><i class="fas fa-solar-panel"></i> Énergies Renouvelables</h3>
+          <div class="skill-icons">
+            <div class="skill-icon">
+              <img src="https://www.pvsyst.com/wp-content/uploads/2024/01/icone256.png" alt="PVsyst">
+              <span>PVsyst</span>
+            </div>
+            <div class="skill-icon">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/9/9c/SketchUp-Logo.png" alt="SketchUp">
+              <span>SketchUp</span>
+            </div>
+            <div class="skill-icon">
+              <img src="https://img.utdstc.com/icon/0f0/016/0f0016e129371c7ca99aa51b17d0d8e336cc23207174437f0e86adf00e271afa:200" alt="DIALux evo">
+              <span>DIALux evo</span>
+            </div>
+            <div class="skill-icon">
+              <img src="https://cdn-icons-png.flaticon.com/512/2628/2628908.png" alt="Dimensionnement">
+              <span>Dimensionnement</span>
+            </div>
+          </div>
+        </div>
+      </div>
 
-          <div class="skills-category">
-            <h4>Énergies Renouvelables</h4>
-            <div class="icons">
-              <div class="skill-icon">
-                <img src="https://www.pvsyst.com/wp-content/uploads/2024/01/icone256.png" alt="PVsyst">
-                <span>PVsyst</span>
-              </div>
-              <div class="skill-icon">
-                <img src="https://cdn-icons-png.flaticon.com/512/2628/2628908.png" alt="Systèmes Solaires">
-                <span>Dimensionnement</span>
-              </div></br>
-              <div class="skill-icon">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/9/9c/SketchUp-Logo.png" alt="Énergie Solaire">
-                <span>sketchup</span>
-              </div>
-              <div class="skill-icon">
-                <img src="https://img.utdstc.com/icon/0f0/016/0f0016e129371c7ca99aa51b17d0d8e336cc23207174437f0e86adf00e271afa:200" alt="DIALux evo">
-                <span>DIALux evo</span>
-              </div>
+    
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="section projects" id="projects">
+    <div class="container">
+      <h2 class="section-title">Projets Réalisés</h2>
+      <p class="section-subtitle">
+        Une sélection de mes réalisations techniques et innovantes
+      </p>
+      
+      <div class="projects-grid">
+        <!-- Projet IoT -->
+        <div class="project-card" >
+          <div class="project-image">
+            <img src="img/boitierbl.jpeg" alt="Système IoT ESP8266" />
+            <div class="project-overlay">
+              <i class="fas fa-expand-arrows-alt"></i>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>Système de surveillance IoT avec ESP8266</h3>
+            <p>Développement d'un système connecté de surveillance environnementale avec capteurs DHT11, notifications temps réel via Gmail & WhatsApp, et interface web Django hébergée sur PythonAnywhere.</p>
+            <div class="project-tags">
+              <span class="project-tag">IoT</span>
+              <span class="project-tag">ESP8266</span>
+              <span class="project-tag">Django</span>
+              <span class="project-tag">Python</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/zakariameziane/temp-projet" class="project-link">
+                <i class="fab fa-github"></i>
+                Code source
+              </a>
+              <a href="https://zakariameziane.pythonanywhere.com/" class="project-link">
+                <i class="fas fa-external-link-alt"></i>
+                Apk web
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projet MCC -->
+        <div class="project-card" >
+          <div class="project-image">
+            <img src="img/mcc.png" alt="Régulation MCC DSP" />
+            <div class="project-overlay">
+              <i class="fas fa-expand-arrows-alt"></i>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>Régulation MCC avec DSP</h3>
+            <p>Modélisation Simulink d'un moteur à courant continu avec hacheur 4 quadrants. Implémentation sur DSP TI F28069M avec algorithme de régulation PI en boucle fermée.</p>
+            <div class="project-tags">
+              <span class="project-tag">MATLAB</span>
+              <span class="project-tag">Simulink</span>
+              <span class="project-tag">DSP</span>
+              <span class="project-tag">Régulation</span>
+            </div>
+            <div class="project-links">
+              <a href="img/rapport PFA 4-GSI (2).pdf" class="project-link" download=>
+                <i class="fas fa-file-pdf"></i>
+                Rapport technique
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projet Centrale Solaire -->
+        <div class="project-card" >
+          <div class="project-image">
+            <img src="img/pr3.jpeg" alt="Centrale Solaire" />
+            <div class="project-overlay">
+              <i class="fas fa-expand-arrows-alt"></i>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>Centrale Solaire 129,6 kWc</h3>
+            <p>Étude complète incluant analyse des besoins énergétiques, simulation PVsyst, dimensionnement des composants, et conception des plans d'implantation avec AutoCAD.</p>
+            <div class="project-tags">
+              <span class="project-tag">PVsyst</span>
+              <span class="project-tag">AutoCAD</span>
+              <span class="project-tag">Solaire</span>
+              <span class="project-tag">Dimensionnement</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">
+                <i class="fas fa-file-alt"></i>
+                Étude complète
+              </a>
+              
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-  
-  <!-- Section Projets -->
-  <section class="projects" id="projects">
-    <h2 class="section-title">Projets réalisés</h2>
-    <div class="project-grid">
-      <!-- Projet 1 -->
-      <div class="project-card">
-        <h3>Système de surveillance IoT avec ESP8266</h3>
-        <p>Développement d'un système connecté de surveillance environnementale avec capteurs DHT11, notifications temps réel via Gmail & WhatsApp, et interface web personnalisée développée avec Django et hébergée sur PythonAnywhere.</p>
-        <a href="iot.html" target="_blank">
-          Voir le projet <i class="fas fa-arrow-right"></i>
-        </a>
-      </div>
 
-      <!-- Projet 2 -->
-      <div class="project-card">
-        <h3>Régulation MCC avec DSP</h3>
-        <p>Modélisation Simulink d'un moteur à courant continu avec hacheur 4 quadrants. Implémentation sur DSP TI F28069M (C2000) avec carte DRV8305EVM. Développement d'algorithme de régulation PI en boucle fermée avec tests comparatifs sous différentes charges.</p>
-        <a href="mcc.html" target="_blank">
-          Voir l'étude <i class="fas fa-arrow-right"></i>
-        </a>
-      </div>
+  <!-- Experience Section -->
+  <section class="section experience" id="experience">
+    <div class="container">
+      <h2 class="section-title">Expérience Professionnelle</h2>
+      <p class="section-subtitle">
+        Mon parcours professionnel et mes réalisations
+      </p>
+      
+      <div class="experience-timeline">
+        <div class="timeline-line"></div>
+        
+        <!-- Expérience Watcome -->
+        <div class="experience-item">
+          <div class="timeline-dot"></div>
+          <div class="experience-card">
+            <div class="experience-header">
+              <div>
+                <div class="experience-title">Stagiaire Ingénieur</div>
+                <div class="experience-company">Watcome SARL - Aéroport Oujda-Angad</div>
+              </div>
+              <div class="experience-date">
+                <i class="far fa-calendar-alt"></i>
+                Avril - Juillet 2022
+              </div>
+            </div>
+            <div class="experience-description">
+              <p>Étude et simulation de l'éclairage aéroportuaire (intérieur/extérieur) avec DIALux evo. Dimensionnement d'un système solaire 134 kWc raccordé au réseau pour l'optimisation énergétique.</p>
+            </div>
+            <div class="experience-gallery">
+              <img src="img/333.jpg" alt="Aéroport Oujda"  />
+              <img src="img/888.jpg" alt="Éclairage aéroportuaire"  />
+              <img src="img/any3-1.jpg" alt="Installation solaire"  />
+            </div>
+          </div>
+        </div>
 
-      <!-- Projet 3 -->
-      <div class="project-card">
-        <h3>Centrale Solaire 129,6 kWc</h3>
-        <p>Étude complète d’une centrale photovoltaïque de 129,6 kWc incluant l’analyse des besoins énergétiques, la simulation des performances via PVsyst, le dimensionnement des composants, et la conception des plans d’implantation avec AutoCAD, conformément aux exigences d’un appel d’offres public.</p>
-        <a href="jerada.html" target="_blank">
-          Détails techniques <i class="fas fa-arrow-right"></i>
-        </a>
+        <!-- Expérience NORSALINA -->
+        <div class="experience-item">
+          <div class="timeline-dot"></div>
+          <div class="experience-card">
+            <div class="experience-header">
+              <div>
+                <div class="experience-title">Stagiaire Technicien</div>
+                <div class="experience-company">NORSALINA Travaux</div>
+              </div>
+              <div class="experience-date">
+                <i class="far fa-calendar-alt"></i>
+                Août - Septembre 2021
+              </div>
+            </div>
+            <div class="experience-description">
+              <p>Étude et dimensionnement d'un système solaire hybride 100 kWc avec Sunny Design. Maintenance des installations photovoltaïques existantes.</p>
+            </div>
+            <div class="experience-gallery">
+              <img src="img/WhatsApp Image 2022-03-11 at 9.19.56 PM.jpeg" alt="Panneaux solaires"  />
+              <img src="img/WhatsApp Image 2022-03-11 at 9.21.45 PM.jpeg" alt="Installation hybride"  />
+              <img src="img/WhatsApp Image 2022-03-11 at 9.21.50 PM (1).jpeg" alt="Maintenance"  />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </section>
-  
-  <!-- Section Expérience professionnelle -->
-  <section class="experience" id="experience">
-    <h2 class="section-title">Expérience professionnelle</h2>
-    <div class="experience-list">
-      
-      <!-- Expérience 1 -->
-      <div class="experience-card">
-        <h3>Stagiaire - Watcome SARL (Aéroport Oujda-Angad)</h3>
-        <p class="date-location">
-          <i class="far fa-calendar-alt"></i> Avril - Juillet 2022 
-          <i class="fas fa-map-marker-alt"></i> Oujda, Maroc
-        </p>
-        <p>
-         Étude et simulation de l’éclairage aéroportuaire (intérieur/extérieur) avec DIALux evo.
-         Dimensionnement d’un système solaire 134 kWc raccordé au réseau pour l’optimisation énergétique.
-
-        </p>
-      </div>
-
-      <!-- Expérience 2 -->
-      <div class="experience-card">
-        <h3>Stagiaire - NORSALINA Travaux</h3>
-        <p class="date-location">
-          <i class="far fa-calendar-alt"></i> Août - Septembre 2021 
-          <i class="fas fa-map-marker-alt"></i> Oujda, Maroc
-        </p>
-        <p>
-          Étude et dimensionnement d’un système solaire hybride 100 kWc avec Sunny Design.
-          Maintenance des installations photovoltaïques.
-        </p>
-      </div>
   </section>
 
   <!-- Footer -->
-  <footer>
+  <footer class="footer">
     <div class="footer-content">
       <div class="footer-links">
         <a href="#home">Accueil</a>
@@ -265,10 +375,18 @@
       </div>
       
       <div class="social-links">
-        <a href="www.linkedin.com/in/zakaria-meziane-5a8524170" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-        <a href="mailto:zakariameziane66@gmail.com"><i class="fas fa-envelope"></i></a>
-        <a href="tel:+212687656704"><i class="fas fa-phone"></i></a>
-        <a href="https://github.com/zakariameziane"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/zakaria-meziane-5a8524170" target="_blank">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="mailto:zakariameziane66@gmail.com">
+          <i class="fas fa-envelope"></i>
+        </a>
+        <a href="tel:+212687656704">
+          <i class="fas fa-phone"></i>
+        </a>
+        <a href="https://github.com/zakariameziane" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
       </div>
       
       <div class="copyright">
@@ -277,8 +395,78 @@
     </div>
   </footer>
 
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="backToTop">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- Image Modals -->
+  <div class="modal" id="modal1">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeModal('modal1')">&times;</button>
+      <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Système IoT complet" />
+    </div>
+  </div>
+
+  <div class="modal" id="modal2">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeModal('modal2')">&times;</button>
+      <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Régulation MCC DSP" />
+    </div>
+  </div>
+
+  <div class="modal" id="modal3">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeModal('modal3')">&times;</button>
+      <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Centrale Solaire" />
+    </div>
+  </div>
+
+  <!-- Experience Image Modals -->
+  <div class="modal" id="modal-exp1-1">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeModal('modal-exp1-1')">&times;</button>
+      <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Aéroport Oujda" />
+    </div>
+  </div>
+
+  <div class="modal" id="modal-exp1-2">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeModal('modal-exp1-2')">&times;</button>
+      <img src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Éclairage aéroportuaire" />
+    </div>
+  </div>
+
+  <div class="modal" id="modal-exp1-3">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeModal('modal-exp1-3')">&times;</button>
+      <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Installation solaire aéroport" />
+    </div>
+  </div>
+
+  <div class="modal" id="modal-exp2-1">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeModal('modal-exp2-1')">&times;</button>
+      <img src="https://images.unsplash.com/photo-1466611653911-95081537e5b7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Panneaux solaires NORSALINA" />
+    </div>
+  </div>
+
+  <div class="modal" id="modal-exp2-2">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeModal('modal-exp2-2')">&times;</button>
+      <img src="https://images.unsplash.com/photo-1624397640148-949b1732bb0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Système hybride" />
+    </div>
+  </div>
+
+  <div class="modal" id="modal-exp2-3">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeModal('modal-exp2-3')">&times;</button>
+      <img src="https://images.unsplash.com/photo-1581092334651-ddf26d9a09d1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Maintenance photovoltaïque" />
+    </div>
+  </div>
+
   <script>
-    // Current year for copyright
+    // Set current year
     document.getElementById('year').textContent = new Date().getFullYear();
 
     // Navbar scroll effect
@@ -291,8 +479,51 @@
       }
     });
 
+    // Active navigation link
+    const navLinks = document.querySelectorAll('.nav-link');
+    const sections = document.querySelectorAll('.section, .hero');
+
+    function updateActiveNav() {
+      let current = '';
+      
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 100;
+        const sectionHeight = section.clientHeight;
+        
+        if (pageYOffset >= sectionTop && pageYOffset < sectionTop + sectionHeight) {
+          current = section.getAttribute('id');
+        }
+      });
+      
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === `#${current}`) {
+          link.classList.add('active');
+        }
+      });
+    }
+
+    window.addEventListener('scroll', updateActiveNav);
+
+    // Smooth scrolling
+    navLinks.forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const targetId = link.getAttribute('href');
+        const targetSection = document.querySelector(targetId);
+        
+        if (targetSection) {
+          targetSection.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+
     // Back to top button
     const backToTopButton = document.getElementById('backToTop');
+    
     window.addEventListener('scroll', () => {
       if (window.scrollY > 300) {
         backToTopButton.classList.add('visible');
@@ -308,43 +539,120 @@
       });
     });
 
-    // Smooth scrolling for navigation links
-    document.querySelectorAll('nav a').forEach(anchor => {
-      anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-        
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-          behavior: 'smooth'
-        });
-        
-        // Update active link
-        document.querySelectorAll('nav a').forEach(link => {
-          link.classList.remove('active');
-        });
-        this.classList.add('active');
+    // Progress bars animation
+    function animateProgressBars() {
+      const progressBars = document.querySelectorAll('.progress-fill');
+      
+      progressBars.forEach(bar => {
+        const width = bar.getAttribute('data-width');
+        bar.style.width = width + '%';
+      });
+    }
+
+    // Intersection Observer for animations
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('fade-in-up');
+          
+          // Animate progress bars when skills section is visible
+          if (entry.target.classList.contains('skills')) {
+            setTimeout(animateProgressBars, 500);
+          }
+        }
+      });
+    }, observerOptions);
+
+    // Observe all sections
+    document.querySelectorAll('.section').forEach(section => {
+      observer.observe(section);
+    });
+
+    // Modal functions
+    function openModal(modalId) {
+      const modal = document.getElementById(modalId);
+      if (modal) {
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      }
+    }
+
+    function closeModal(modalId) {
+      const modal = document.getElementById(modalId);
+      if (modal) {
+        modal.classList.remove('active');
+        document.body.style.overflow = 'auto';
+      }
+    }
+
+    // Close modal when clicking outside
+    document.querySelectorAll('.modal').forEach(modal => {
+      modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+          closeModal(modal.id);
+        }
       });
     });
 
-    // Update active link on scroll
-    const sections = document.querySelectorAll('section');
+    // Close modal with Escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        document.querySelectorAll('.modal.active').forEach(modal => {
+          closeModal(modal.id);
+        });
+      }
+    });
+
+    // Skill icons hover effect
+    document.querySelectorAll('.skill-icon').forEach(icon => {
+      icon.addEventListener('mouseenter', () => {
+        icon.style.transform = 'scale(1.1) translateY(-5px)';
+      });
+      
+      icon.addEventListener('mouseleave', () => {
+        icon.style.transform = 'scale(1) translateY(0)';
+      });
+    });
+
+    // Project cards interaction
+    document.querySelectorAll('.project-card').forEach(card => {
+      card.addEventListener('mouseenter', () => {
+        card.style.transform = 'translateY(-10px) scale(1.02)';
+      });
+      
+      card.addEventListener('mouseleave', () => {
+        card.style.transform = 'translateY(0) scale(1)';
+      });
+    });
+
+    // Parallax effect for hero section
     window.addEventListener('scroll', () => {
-      let current = '';
+      const scrolled = window.pageYOffset;
+      const hero = document.querySelector('.hero');
+      const heroImage = document.querySelector('.hero-image img');
       
-      sections.forEach(section => {
-        const sectionTop = section.offsetTop;
-        const sectionHeight = section.clientHeight;
-        
-        if (pageYOffset >= sectionTop - 300) {
-          current = section.getAttribute('id');
-        }
-      });
-      
-      document.querySelectorAll('nav a').forEach(link => {
-        link.classList.remove('active');
-        if (link.getAttribute('href') === `#${current}`) {
-          link.classList.add('active');
-        }
-      });
+      if (hero && heroImage) {
+        heroImage.style.transform = `translateY(${scrolled * 0.1}px)`;
+      }
+    });
+
+    // Mobile menu toggle (for future implementation)
+    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+    const navMenu = document.querySelector('.nav-menu');
+
+    mobileMenuBtn.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+    });
+
+    // Initialize animations on load
+    window.addEventListener('load', () => {
+      document.querySelector('.hero-content').classList.add('fade-in-up');
+      document.querySelector('.hero-image').classList.add('fade-in-up');
     });
   </script>
 </body>
